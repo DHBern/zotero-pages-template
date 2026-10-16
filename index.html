@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bibliography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Bibliography</h1>
+    <p id="intro"></p>
+    <nav><a href="index.html">Bibliography</a> · <a href="about.html">About</a></nav>
+  </header>
+
+  <main>
+    <div class="tools">
+      <input id="filter" type="search" placeholder="Filter: author, title, year, tag …" aria-label="Filter entries">
+      <span id="status">Loading from Zotero …</span>
+    </div>
+    <div id="bibliography"></div>
+  </main>
+
+  <footer>
+    <p>Data: <a id="source" href="#">Zotero library</a> ·
+       Download: <a id="dl-bibtex" href="#">BibTeX</a> · <a id="dl-csljson" href="#">CSL JSON</a> ·
+       Template: DH Lab, University of Bern</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

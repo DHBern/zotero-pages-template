@@ -1,0 +1,17 @@
+/* Plain and legible – change freely */
+body { font-family: Arial, Helvetica, sans-serif; line-height: 1.5; color: #222;
+       max-width: 46em; margin: 0 auto; padding: 1.5em 1em 3em; }
+h1 { color: #E6002E; margin-bottom: .2em; }
+h2 { border-bottom: 1px solid #ddd; padding-bottom: .2em; margin-top: 2em; }
+a { color: #B00023; }
+nav { margin: .5em 0 1.5em; }
+.tools { display: flex; gap: 1em; align-items: center; margin-bottom: 1em; flex-wrap: wrap; }
+#filter { flex: 1; min-width: 12em; padding: .45em .6em; font-size: 1em; border: 1px solid #bbb; border-radius: 4px; }
+#status { color: #666; font-size: .9em; }
+.entry { margin: 0 0 1.1em; }
+.entry .csl-entry { padding-left: 1.5em; text-indent: -1.5em; }
+.tags { margin-top: .25em; }
+.tag { display: inline-block; font-size: .78em; background: #f2f2f2; border-radius: 3px; padding: 0 .4em; margin-right: .3em; }
+.note { margin: .4em 0 0 1.5em; padding: .4em .8em; border-left: 3px solid #E6002E; background: #fafafa; font-size: .95em; }
+footer { margin-top: 3em; font-size: .85em; color: #666; }
+.error { color: #B00023; }
