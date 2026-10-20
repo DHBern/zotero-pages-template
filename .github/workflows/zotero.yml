@@ -22,13 +22,13 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Only for source "file"
         id: mode
         run: |
           if grep -Eq '^\s*source:\s*"file"' config.js; then echo "file=true" >> "$GITHUB_OUTPUT";
           else echo "config.js uses source \"api\" – nothing to do."; fi
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         if: steps.mode.outputs.file == 'true'
         with:
           python-version: "3.12"
