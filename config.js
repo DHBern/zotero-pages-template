@@ -13,6 +13,12 @@ const CONFIG = {
   libraryType: "groups",
   libraryId: "2386895",          // dh_unibe (open group of DH Bern)
 
+  // Where the page gets the data:
+  //   "api"  – the browser asks the Zotero API on every visit (public libraries only, no key)
+  //   "file" – the page reads data/items.json, written by the GitHub Action with your secret key
+  //            (private libraries; see README → «Private library»)
+  source: "api",
+
   // Optional: only one collection (the 8-character key in the collection's URL), "" = whole library
   collectionKey: "BT3NCKZK",     // dh_unibe → lecture-introduction
 
